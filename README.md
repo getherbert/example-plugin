@@ -1,12 +1,15 @@
-Herbert
+Example Plugin: Api Posts
 ===============
 
-Welcome to the Herbert. Please check out the docs [here](http://getherbert.com/).
+This is an example plugin for Herbert. Remember to run `composer install`
 
-Example plugin should be available by 7th June 2015.
-
----
-If your after the old version you can find it here: https://github.com/getherbert/herbert/tree/pre
-And the docs for that version: http://getherbert.com/pre
+The plugin:
+1. Extends the post Publish metebox with an option to enable the api on that post.
+2. Adds a panel where you can define IP addresses that are allowed to access the api.
+3. Adds routes for the api:
+⋅⋅*`/api/posts`
+⋅⋅*`/api/posts?page2`
+⋅⋅*`/api/post/123`
+⋅⋅*`DELETE /api/post/123`
 
 
