@@ -1,0 +1,17 @@
+{
+  "name": "getherbert/herbert-plugin",
+  "description": "Herbert plugin",
+  "license": "MIT",
+  "require": {
+    "getherbert/framework": "~0.9"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "ApiPosts\\": "app/"
+    }
+  }
+}

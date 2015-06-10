@@ -1,0 +1,20 @@
+<div class="wrap">
+    <h2>Api Posts</h2> <br/>
+    <form method="post" action="{{ panel_url('ApiPosts::mainPanel', {'action':'add'}) }}">
+        <input name="address" type="text" placeholder="Enter IP" />
+        <input type="submit" name="submit" class="button button-primary" value="Add" />
+    </form>
+    <div class="postbox ">
+        <div class="inside">
+            <h4>Allowed IPs</h4>
+            <ul>
+            {% for item in addresses %}
+                <li>{{ item.address }} <a class="button button-secondary button-large" href="{{ panel_url('ApiPosts::mainPanel', {'action':'delete', 'id':item.id, '_method':'POST'}) }}">Delete</a></li>
+            {% else %}
+                Looks like you have no addresses added.
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</div>
