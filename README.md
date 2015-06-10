@@ -9,7 +9,7 @@ The plugin:
 2. Adds a panel where you can define IP addresses that are allowed to access the api.
 3. Adds routes for the api:
   * `/api/posts`
-  * `/api/posts?page2`
+  * `/api/posts?page=2`
   * `/api/post/123`
   * `DELETE /api/post/123`
 
